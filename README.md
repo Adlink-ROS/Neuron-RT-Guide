@@ -109,7 +109,10 @@ $> dpkg -i linux-headers-4.9.38-xenomai-3.0.5_4.9.38-xenomai-3.0.5-10.00.Custom_
 
 ### Install from binary
 
-If you are using Intel's i7 code, you can download the pre-build xenomai debian package, which is under `bin/i7-6700TE/linux-image-4.9.38-xenomai-3.0.5-i7-6700te_4.9.38-xenomai-3.0.5-i7-6700te-10.00.Custom_amd64.deb`
+We have build i7/i5/celeron's xenomai debian package, which are located at:
+
+`bin/i7-6700TE/linux-image-4.9.38-xenomai-3.0.5-i7-6700te_4.9.38-xenomai-3.0.5-i7-6700te-10.00.Custom_amd64.deb`
+`bin/celeron-G3900TE/linux-image-4.9.38-xenomai-3.0.5-celeron_4.9.38-xenomai-3.0.5-celeron-10.00.Custom_amd64.deb`
 
 After download that, instal it using `dpkg -i`
 
