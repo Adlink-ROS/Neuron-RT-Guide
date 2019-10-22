@@ -129,6 +129,30 @@ $> sudo update-grub
 After that, reboot your Neuron board and choose Xenomai kernel in your grup list.
 
 ## Test your realtime kernel and network
+1. We can run the demo code of Xenomai. However we need to use 3.0.9 since 3.0.5 has some build problems.
+
+```bash
+$> wget https://xenomai.org/downloads/xenomai/stable/xenomai-3.0.9.tar.bz2
+$> tar xf xenomai-3.0.9.tar.bz2
+```
+
+2. Then we start to build xenomai library
+
+```bash
+$> cd xenomai-3.0.9
+$> ./configure --with-core=cobalt
+$> make
+$> sudo make install
+```
+
+3. You'll find the xenomai install under `/usr/xenomai/`.
+
+4. We can run the demo program.
+
+```bash 
+sudo /usr/xenomai/demo/cyclictest >/dev/null 2>/dev/null &
+cat /proc/xenomai/sched/stat
+```
 
 ## Write your first application
 
