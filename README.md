@@ -155,6 +155,7 @@ cat /proc/xenomai/sched/stat
 ```
 
 ## Write your first application
+You can refer to the example code in `example` folder.
 
 ## Conclusion
 
